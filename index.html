@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore the professional portfolio of Jo Sam, an experienced Full Stack Developer skilled in HTML, CSS, JavaScript, React, Node.js, Express.js, and MongoDB. Discover his web development project / s and responsive design / s, self learning."
+    />
+    <meta
+      name="keywords"
+      content="Jo Sam, Full Stack Developer, web developer, portfolio, HTML, CSS, JavaScript, React, Node.js, Express.js, MongoDB, web projects, responsive design, API integration, software development, front-end developer, back-end developer"
+    />
+    <meta
+      property="og:title"
+      content="Jo Sam - Professional Portfolio Website"
+    />
+    <meta
+      property="og:description"
+      content="Explore the professional portfolio of Jo Sam, showcasing web development projects and skills."
+    />
+    <meta property="og:image" content="images/my-main-img.JPEG" />
+    <meta property="og:url" content="https://josam.rf.gd" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Jo Sam - Professional Portfolio Website"
+    />
+    <meta
+      name="twitter:description"
+      content="Explore the professional portfolio of Jo Sam, showcasing web development projects and skills."
+    />
+    <meta name="twitter:image" content="images/my-main-img.JPEG" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <title>Jo Sam - web development</title>
+    <!-- ===================================>
+                  FONT-AWESOME-LIBRARY
+    <==================================== -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XMX8G85ZFM"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-XMX8G85ZFM");
+    </script>
+    <script
+      type="text/javascript"
+      src="https://platform-api.sharethis.com/js/sharethis.js#property=6698c1f03ca64b0019342c44&product=inline-share-buttons&source=platform"
+      async="async"
+    ></script>
+  </head>
+  <body>
+    <!-- ===================================>
+                  ALERT
+    <==================================== -->
+
+    <div class="alert" id="alert">
+      <div class="container">
+        <p>incomplete (under development)</p>
+        <div class="btn-box" id="alert-btn-box">
+          <div class="line line-one"></div>
+          <div class="line line-two"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================================>
+                  HEADER-SECTION
+    <==================================== -->
+
+    <header id="header">
+      <div class="container">
+        <div class="logo-container">
+          <h1 class="logo-text"></h1>
+        </div>
+        <div class="header-links" id="header-links">
+          <ul class="links-container">
+            <li class="header-link" onclick="scrollToTop()">
+              <i class="to-top-btn fa-solid fa-house"></i>
+            </li>
+          </ul>
+          <div class="buttons-container">
+            <a href="" class="header-button"> MAIL ME </a>
+          </div>
+        </div>
+        <div id="toggleIcon" class="toggle-icon-container">
+          <div class="line" id="bars-line-one"></div>
+          <div class="line short-line" id="short-line"></div>
+          <div class="line" id="bars-line-two"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===================================>
+                  HERO-SECTION
+    <==================================== -->
+
+    <div class="hero-section" id="hero-section">
+      <div class="box"></div>
+      <div class="container">
+        <div class="img">
+          <img
+            src="images/my-main-img.JPEG"
+            alt="my-main-img"
+            class="my-main-img"
+          />
+        </div>
+        <div class="info">
+          <h2 class="main-name">I'm</h2>
+          <h1 class="job-title"><span class="line"></span></h1>
+          <p class="description"></p>
+          <div
+            class="special-button"
+            onclick="gotopage('./pages/services.html')"
+          >
+            <h3>Our Services</h3>
+            <div class="icon">
+              <i class="fa-solid fa-id-card"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================================>
+                  ABOUT-SECTION
+    <==================================== -->
+
+    <section class="about-me" id="about-me">
+      <div class="container">
+        <div class="title" data-aos="fade-up" data-aos-duration="800">
+          <span class="main-title">ABOUT ME</span>
+          <h3 class="second-title">
+            ABOUT <span class="highlighted">ME</span>
+          </h3>
+        </div>
+
+        <div class="information">
+          <div
+            class="personal-infos"
+            data-aos="fade-right"
+            data-aos-duration="800"
+          >
+            <h3>Personal Infos</h3>
+            <ul>
+              <li>first name: <span class="first-name"></span></li>
+              <li>last name: <span class="last-name"></span></li>
+              <li>age: <span class="age"></span></li>
+              <li>nationality: <span class="nationality"></span></li>
+              <li>freelance: <span class="freelance"></span></li>
+              <li>address: <span class="address"></span></li>
+              <li>phone: <span class="phone-number"></span></li>
+              <li>
+                email:
+                <span style="text-transform: lowercase" class="gmail"></span>
+              </li>
+              <li>instagram: <span class="instasam-account"></span></li>
+              <li>languages: <span class="languages"></span></li>
+            </ul>
+            <a href="" download="" class="special-button cv-btn">
+              <h3>Download CV</h3>
+              <div class="icon">
+                <i class="fa-solid fa-download"></i>
+              </div>
+            </a>
+          </div>
+          <div class="statistics"></div>
+        </div>
+
+        <div class="my-skills" id="skills">
+          <h3 class="fd" data-aos="fade-up" data-aos-duration="800">
+            my skills
+          </h3>
+          <div class="progress-bars-boxs"></div>
+        </div>
+
+        <div class="experience-education">
+          <h3 class="fd title" data-aos="fade-up" data-aos-duration="800">
+            Experience & Education
+          </h3>
+          <div class="cards" id="education-cards"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================>
+                  PORTFOLIO-SECTION
+    <==================================== -->
+
+    <section class="portfolio" id="portfolio">
+      <div id="black-box"></div>
+
+      <div class="image-container" id="image-container">
+        <img id="image-container-img" src="" alt="" />
+        <div class="close" id="close-image-container">
+          <i class="fa-solid fa-circle-xmark"></i>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="title" data-aos="fade-up" data-aos-duration="800">
+          <span class="main-title">WORKS</span>
+          <h3 class="second-title">
+            My <span class="highlighted">Portfolio</span>
+          </h3>
+        </div>
+
+        <div class="categorys" id="portfolio-categorys"></div>
+        <div class="cards" id="portfolio-cards"></div>
+        <div class="see-more" id="see-more-portfolio-cards">
+          <h3>see more</h3>
+          <i class="fa-solid fa-angles-down"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================>
+                  CONTACT-SECTION
+    <==================================== -->
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="title" data-aos="fade-up" data-aos-duration="800">
+          <span class="main-title">CONTACT</span>
+          <h3 class="second-title">
+            Get in <span class="highlighted">touch</span>
+          </h3>
+        </div>
+
+        <div class="form-and-info">
+          <div
+            class="left-side"
+            id="contact-left-side"
+            data-aos="fade-right"
+            data-aos-duration="800"
+          >
+            <div class="title-and-p">
+              <h3 id="contact-small-title"></h3>
+              <p id="contact-paragraph"></p>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <i class="fa-solid fa-address-book"></i>
+              </div>
+              <div class="info">
+                <h4>address point</h4>
+                <p id="contact-address-point"></p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="info">
+                <h4>phone number</h4>
+                <p id="contact-phone"></p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <i class="fa-solid fa-at"></i>
+              </div>
+              <div class="info">
+                <h4>email me</h4>
+                <p id="contact-email"></p>
+              </div>
+            </div>
+            <div class="social-icons" id="contact-social-icons"></div>
+          </div>
+          <div class="right-side" data-aos="fade-left" data-aos-duration="800">
+            <form
+              data-aos="fade-left"
+              data-aos-duration="800"
+              action="https://formspree.io/f/xovaqzye"
+              method="POST"
+            >
+              <div class="upper-side">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="your name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="your email"
+                  required
+                />
+              </div>
+              <div class="lower-side">
+                <input
+                  type="text"
+                  placeholder="your subject"
+                  name="subject"
+                  required
+                />
+                <textarea
+                  cols="30"
+                  rows="6"
+                  placeholder="your message"
+                  required
+                  style="resize: none"
+                  name="message"
+                ></textarea>
+              </div>
+              <button
+                style="background: none"
+                type="submit"
+                class="special-button"
+              >
+                <h3>SEND MESSAGE</h3>
+                <div class="icon">
+                  <i class="fa-solid fa-paper-plane"></i>
+                </div>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================>
+                  BLOG-SECTION
+    <==================================== -->
+
+    <section class="blog">
+      <div class="container">
+        <div class="title" data-aos="fade-up" data-aos-duration="800">
+          <span class="main-title">Blog</span>
+          <h3 class="second-title">
+            My <span class="highlighted">Posts</span>
+          </h3>
+        </div>
+
+        <div class="cards" id="blogs-cards"></div>
+        <div
+          class="see-more"
+          id="see-more-blog-cards"
+          onclick="window.location.href = 'pages/blog-pages.html'"
+        >
+          <h3>see more</h3>
+          <i class="fa-solid fa-angles-right"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================>
+                  Share-Buttons
+    <==================================== -->
+
+    <div class="sharethis-inline-share-buttons"></div>
+
+    <!-- ===================================>
+                  FOOTER
+    <==================================== -->
+
+    <footer>
+      <div class="container">
+        <div class="sections">
+          <div class="section" data-aos="fade-up" data-aos-duration="800">
+            <h3>portfolio</h3>
+            <ul class="shortcuts" id="footer-shortcuts"></ul>
+          </div>
+          <div class="section" data-aos="fade-up" data-aos-duration="800">
+            <h3>posts</h3>
+            <ul id="footer-posts"></ul>
+          </div>
+          <div class="section" data-aos="fade-up" data-aos-duration="800">
+            <h3>Contact Info</h3>
+            <ul class="address-information" id="footer-address-information">
+              <li id="footer-address"></li>
+              <li id="footer-phone"></li>
+              <li id="footer-email"></li>
+            </ul>
+          </div>
+          <div class="section" data-aos="fade-up" data-aos-duration="800">
+            <h3>join our mail list</h3>
+            <form class="mail-box">
+              <input type="email" required placeholder="Enter your email" />
+              <input class="button" type="submit" value="join" />
+            </form>
+            <div class="social-icons" id="footer-social-icons"></div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>
+            CreatedBy @JoSam | &copy; <span id="footer-year"></span>
+            <span id="company-name"></span> | All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===================================>
+                  SCRIPTS
+    <==================================== -->
+
+    <script src="js/main.js"></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Gerges Samuel",
+        "jobTitle": "Full Stack Developer",
+        "url": "https://josam.rf.gd",
+        "sameAs": [
+          "https://linkedin.com/gerges-samuel",
+          "https://github.com/josamcode"
+        ]
+      }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true, // Run the animation only once
+      });
+    </script>
+  </body>
+</html>

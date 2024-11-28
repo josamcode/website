@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مقالات</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap');
+      body {
+        font-family: "El Messiri", sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        direction: rtl; /* لتحديد الكتابة من اليمين إلى اليسار */
+      }
+
+      .container {
+        text-align: center;
+        padding: 20px;
+        max-width: 800px;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      .articles {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+
+      .card {
+        background-color: #ffffff;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        width: auto;
+        text-align: center;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      .card a {
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+      }
+
+      .card a:hover {
+        color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>المقالات</h1>
+      <div id="articles" class="articles"></div>
+    </div>
+
+    <script>
+      // script.js
+
+      // جلب بيانات المقالات من ملف JSON
+      fetch("blogs.json")
+        .then((response) => response.json())
+        .then((data) => {
+          const articlesContainer = document.getElementById("articles");
+
+          data.forEach((article) => {
+            const card = document.createElement("div");
+            card.className = "card";
+
+            const link = document.createElement("a");
+            link.href = "blog-pages/" + article.url;
+            link.textContent = article.title;
+
+            card.appendChild(link);
+            articlesContainer.appendChild(card);
+          });
+        })
+        .catch((error) => console.error("Error fetching articles:", error));
+    </script>
+  </body>
+</html>

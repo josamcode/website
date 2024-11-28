@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Packages</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Assuming CSS in a separate file for main styles -->
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        gap: 30px;
+      }
+      /* الكروت */
+      .cards {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 30px;
+      }
+      .package-card {
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+        text-align: left;
+        margin-bottom: 20px;
+      }
+
+      .package-card:hover {
+        transform: scale(1.05);
+      }
+
+      .package-title {
+        font-size: 24px;
+        font-weight: bold;
+        color: #007bff;
+        margin-bottom: 10px;
+      }
+
+      .package-price {
+        font-size: 22px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      .package-details {
+        list-style: none;
+        padding: 0;
+        font-size: 16px;
+      }
+
+      .package-details li {
+        margin: 5px 0;
+        display: flex;
+        align-items: center;
+      }
+
+      .package-details li.available::before {
+        content: "✔️";
+        color: #28a745; /* لون العلامة المتاحة */
+        margin-right: 8px;
+        font-size: 18px;
+      }
+
+      .package-details li.unavailable::before {
+        content: "❌";
+        color: #dc3545; /* لون العلامة غير المتاحة */
+        margin-right: 8px;
+        font-size: 18px;
+      }
+
+      .order-btn {
+        margin-top: 15px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      .order-btn:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Our Packages</h1>
+
+      <div class="cards">
+        <!-- الكارت الأول -->
+        <div class="package-card">
+          <h2 class="package-title">Basic Package</h2>
+          <p class="package-price">$20</p>
+          <ul class="package-details">
+            <li class="available">Basic Support</li>
+            <li class="available">1 page</li>
+            <li class="available">Website Setup</li>
+            <li class="unavailable">Advanced SEO</li>
+            <li class="unavailable">24/7 Customer Support</li>
+          </ul>
+        </div>
+
+        <!-- الكارت الثاني -->
+        <div class="package-card">
+          <h2 class="package-title">Standard Package</h2>
+          <p class="package-price">$60</p>
+          <ul class="package-details">
+            <li class="available">Basic Support</li>
+            <li class="available">2-3 pages</li>
+            <li class="available">Website Setup</li>
+            <li class="available">Advanced SEO</li>
+            <li class="unavailable">24/7 Customer Support</li>
+          </ul>
+        </div>
+
+        <!-- الكارت الثالث -->
+        <div class="package-card">
+          <h2 class="package-title">Premium Package</h2>
+          <p class="package-price">$100</p>
+          <ul class="package-details">
+            <li class="available">Basic Support</li>
+            <li class="available">up to 5 pages</li>
+            <li class="available">Website Setup</li>
+            <li class="available">Advanced SEO</li>
+            <li class="available">24/7 Customer Support</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

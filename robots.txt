@@ -1,0 +1,20 @@
+User-agent: *
+Disallow: /.cpanel
+Disallow: /.softaculous
+Disallow: /mail
+Disallow: /lastlogin
+Disallow: /override
+Disallow: /DO NOT UPLOAD FILES HERE
+Disallow: /index.html
+Disallow: /data.json
+Disallow: /404.html
+
+# السماح بالوصول إلى الملفات الضرورية
+Allow: /sitemap.xml
+Allow: /js/main.js
+Allow: /css/style.css
+Allow: /images
+Allow: /fonts
+
+# حظر الوصول إلى ملفات htaccess
+Disallow: /.htaccess

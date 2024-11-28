@@ -1,0 +1,279 @@
+{
+  "meta": {
+    "description": "Jo Sam portfolio website",
+    "title": "Jo Sam"
+  },
+  "header": {
+    "logoText": "Jo.Sam",
+    "logo": "logo.webp",
+    "email": "josamcode@gmail.com",
+    "navigation": [
+      {
+        "name": "about-me",
+        "icon": "fa-solid fa-id-card"
+      },
+      {
+        "name": "skills",
+        "icon": "fa-solid fa-screwdriver-wrench"
+      },
+      {
+        "name": "portfolio",
+        "icon": "fa-solid fa-briefcase"
+      },
+      {
+        "name": "contact",
+        "icon": "fa-solid fa-headset"
+      }
+    ]
+  },
+  "heroSection": {
+    "image": "my-main-img.JPEG",
+    "name": "Gerges Samuel",
+    "title": "Full Stack Developer",
+    "description": "Full stack developer . I have over two years of experience in web development, during which I have implemented several projects and learned a lot. I am proficient in various front-end and back-end web development technologies, including HTML, CSS, JavaScript, ReactJS, Tailwind, Bootstrap, Node.js, Express.js, MongoDB, And many other technologies."
+  },
+  "aboutMe": {
+    "title": "ABOUT ME",
+    "personalInfos": {
+      "firstName": "Gerges",
+      "lastName": "Samuel",
+      "age": "18 years",
+      "nationality": "Egyptian",
+      "freelance": "available",
+      "address": "Egypt",
+      "phone": "+201204770940",
+      "email": "josamcode",
+      "instagram": "gerges_s_gabra",
+      "languages": "arabic, english"
+    },
+    "cv": "gerges-samuel-cv.pdf",
+    "statistics": [
+      {
+        "num": "2",
+        "title": "years of experience"
+      },
+      {
+        "num": "40",
+        "title": "completed projects"
+      },
+      {
+        "num": "2",
+        "title": "happy customers"
+      },
+      {
+        "num": "1",
+        "title": "awards won"
+      }
+    ]
+  },
+  "skills": [
+    {
+      "name": "HTML",
+      "percentage": "98"
+    },
+    {
+      "name": "CSS",
+      "percentage": "96"
+    },
+    {
+      "name": "JS",
+      "percentage": "95"
+    },
+    {
+      "name": "React.JS",
+      "percentage": "90"
+    },
+    {
+      "name": "Node.JS",
+      "percentage": "95"
+    },
+    {
+      "name": "MongoDB",
+      "percentage": "90"
+    }
+  ],
+  "experienceEducation": [
+    {
+      "year": "2022",
+      "icon": "fa-solid fa-code",
+      "title": "Frontend Development",
+      "place": "Self-Learning",
+      "description": "Gained proficiency in frontend technologies such as HTML, CSS, JavaScript, and frameworks like React and Vue, enhancing web design capabilities."
+    },
+    {
+      "year": "2023",
+      "icon": "fa-solid fa-code",
+      "title": "Backend Development",
+      "place": "Self-Learning",
+      "description": "Mastered backend development skills, covering server-side programming, databases, and APIs, advancing from frontend expertise."
+    },
+    {
+      "year": "2021",
+      "icon": "fa-solid fa-video",
+      "title": "Video Editing",
+      "place": "Self-Learning",
+      "description": "Acquired video editing skills using tools like Adobe Premiere Pro and After Effects, fostering content creation abilities for multimedia projects."
+    },
+    {
+      "year": "2020",
+      "icon": "fa-solid fa-pen-nib",
+      "title": "Graphic Design",
+      "place": "Self-Learning",
+      "description": "Explored graphic design fundamentals, including layout, typography, and visual communication, laying the groundwork for creative projects."
+    }
+  ],
+  "portfolio": {
+    "title": "WORKS",
+    "categories": ["All", "web", "design", "editing", "content"],
+    "projects": [
+      {
+        "title": "Product Management System",
+        "category": "web",
+        "image": "web/product-management-system.webp",
+        "link": "https://josamcode.github.io/ProductManagementSystem/"
+      },
+      {
+        "title": "Easy Landing Page",
+        "category": "web",
+        "image": "web/easybank-landing-page.webp",
+        "link": "https://josamcode.github.io/Easybank-landing-page/"
+      },
+      {
+        "title": "To-do List",
+        "category": "web",
+        "image": "web/todo-list.webp",
+        "link": "https://josamcode.github.io/TodoList/"
+      },
+      {
+        "title": "Weather Application",
+        "category": "web",
+        "image": "web/weather-application.webp",
+        "link": "https://josamcode.github.io/WeatherApplication/"
+      },
+      {
+        "title": "Creative Web Agency",
+        "category": "web",
+        "image": "web/creative-web-agency.webp",
+        "link": "https://josamcode.github.io/Creative-Web-Agency/"
+      },
+      {
+        "title": "Manage Landing Page",
+        "category": "web",
+        "image": "web/manage-landing-page.webp",
+        "link": "https://josamcode.github.io/manage-landing-page/"
+      },
+      {
+        "title": "Multi Step Form",
+        "category": "web",
+        "image": "web/multi-step-form.webp",
+        "link": "https://josamcode.github.io/Multi-step-form/"
+      },
+      {
+        "title": "Thumbnail",
+        "category": "design",
+        "image": "design/1.webp"
+      },
+      {
+        "title": "Burger design",
+        "category": "design",
+        "image": "design/2.webp"
+      },
+      {
+        "title": "Social media design",
+        "category": "design",
+        "image": "design/3.webp"
+      },
+      {
+        "title": "Logo design",
+        "category": "design",
+        "image": "design/4.webp"
+      },
+      {
+        "title": "Social media design",
+        "category": "design",
+        "image": "design/5.webp"
+      },
+      {
+        "title": "Jo logo design",
+        "category": "design",
+        "image": "design/6.webp"
+      },
+      {
+        "title": "Jo 2 logo design",
+        "category": "design",
+        "image": "design/7.webp"
+      },
+      {
+        "title": "Social media design",
+        "category": "design",
+        "image": "design/8.webp"
+      },
+      {
+        "title": "Social media design",
+        "category": "design",
+        "image": "design/9.webp"
+      },
+      {
+        "title": "Social media design mockup",
+        "category": "design",
+        "image": "design/10.webp"
+      }
+    ]
+  },
+  "contact": {
+    "title": "dont be shy!",
+    "description": "If you're looking for a standout website development or to enhance your current website, I'm here to help create your company's website or application, Contact me.",
+    "address": "Minya - Egypt",
+    "phone": "+201204770940",
+    "email": "josamcode",
+    "social": [
+      {
+        "ariaLabel": "LinkedIn profile",
+        "link": "https://www.linkedin.com/in/gerges-samuel",
+        "icon": "fa-brands fa-linkedin"
+      },
+      {
+        "ariaLabel": "GitHub profile",
+        "link": "https://github.com/josamcode",
+        "icon": "fa-brands fa-github"
+      },
+      {
+        "ariaLabel": "Instagram account",
+        "link": "https://www.instagram.com/gerges_s_gabra/",
+        "icon": "fa-brands fa-instagram"
+      },
+      {
+        "ariaLabel": "Facebook account",
+        "link": null,
+        "icon": "fa-brands fa-facebook"
+      },
+      {
+        "ariaLabel": "YouTube Channel",
+        "link": null,
+        "icon": "fa-brands fa-youtube"
+      }
+    ]
+  },
+  "blog": {
+    "title": "posts",
+    "posts": [
+      {
+        "title": "How to learn programming in 2024.",
+        "image": "blog/blog-03.webp",
+        "description": "The first step in learning programming is setting a goal. Ask yourself: Do you want to try websites, apps, games, and cybersecurity?....",
+        "url": "how-to-learn-programing-in-2024.html"
+      },
+      {
+        "title": "Frontend Development roadmap",
+        "image": "blog/blog-01.webp",
+        "description": "Front-end development is one of the most popular fields in the world of programming. In this plan, we will go over how to learn front-end development...",
+        "url": "frontend-roadmap.html"
+      },
+      {
+        "title": "how to use ai tools.",
+        "image": "blog/blog-02.webp",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quaerat reprehenderit"
+      }
+    ]
+  }
+}
