@@ -30,7 +30,7 @@ function loadHeader(data) {
   data.header.navigation.forEach((link) => {
     navigationLinks.innerHTML += `
         <li class="header-link" onclick="scrollToElement('${link.name}')">
-        <i class="${link.icon}"></i>
+        <i>${link.icon}</i>
         </li>
         `;
   });
