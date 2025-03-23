@@ -14,9 +14,9 @@
   <======================================== */
 
 :root {
-  --main-color: rgb(255, 204, 0);
-  --second-color: #fafafa;
-  --text-color: rgb(0, 0, 0);
+  --main-color: #4CAF50;
+  --second-color: #f4f4f4;
+  --text-color: #333;
   --light-color: #222;
 
   --main-font: "Nunito", sans-serif;
@@ -165,7 +165,7 @@ header {
   position: fixed;
   top: 30px;
   z-index: 999;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   color: var(--text-color);
   overflow: hidden;
 }
@@ -203,12 +203,17 @@ header .container {
   text-align: center;
 }
 
+.header-link i {
+  font-style: normal;
+  font-weight: 100;
+}
+
 .links-container {
   flex: 2;
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 2vw;
+  gap: 1.3vw;
 }
 
 .links-container li {
@@ -235,7 +240,7 @@ header .container {
   border-radius: 5px;
   cursor: pointer;
   font-size: 14px;
-  color: var(--text-color);
+  color: #fff;
   text-decoration: none;
   font-weight: 500;
 }
@@ -331,6 +336,7 @@ header .container {
   align-items: center;
   justify-content: center;
   margin-top: 90px;
+  padding-top: 100px;
   min-height: calc(100vh - 60px);
   background-color: var(--second-color);
   position: relative;
@@ -366,7 +372,7 @@ header .container {
 .hero-section .container .img img {
   width: 100%;
   border-radius: 20px;
-  box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.7);
+  box-shadow: 5px 5px 2px 0px rgba(76, 175, 80, 0); /* Assuming --main-color is #4CAF50 */
 }
 
 .hero-section .container .info {
@@ -442,6 +448,7 @@ header .container {
   position: absolute;
   top: 0;
   right: 0;
+  color: #fff;
 }
 
 .personal-infos .button {
@@ -778,6 +785,7 @@ section {
   width: 35px;
   height: 35px;
   background-color: var(--main-color);
+  color: #fff;
   border-radius: 50%;
   font-size: 16px;
 }
