@@ -10,24 +10,24 @@
     "navigation": [
       {
         "name": "about-me",
-        "icon": "fa-solid fa-id-card"
+        "icon": "About"
       },
       {
         "name": "skills",
-        "icon": "fa-solid fa-screwdriver-wrench"
+        "icon": "Skills"
       },
       {
         "name": "portfolio",
-        "icon": "fa-solid fa-briefcase"
+        "icon": "Portfolio"
       },
       {
         "name": "contact",
-        "icon": "fa-solid fa-headset"
+        "icon": "Contact"
       }
     ]
   },
   "heroSection": {
-    "image": "my-main-img.JPEG",
+    "image": "my-main-img.webp",
     "name": "Gerges Samuel",
     "title": "Full Stack Developer",
     "description": "Full stack developer . I have over two years of experience in web development, during which I have implemented several projects and learned a lot. I am proficient in various front-end and back-end web development technologies, including HTML, CSS, JavaScript, ReactJS, Tailwind, Bootstrap, Node.js, Express.js, MongoDB, And many other technologies."
@@ -42,7 +42,7 @@
       "freelance": "available",
       "address": "Egypt",
       "phone": "+201204770940",
-      "email": "josamcode",
+      "email": "josamcode@g...",
       "instagram": "gerges_s_gabra",
       "languages": "arabic, english"
     },
@@ -126,6 +126,18 @@
     "title": "WORKS",
     "categories": ["All", "web", "design", "editing", "content"],
     "projects": [
+      {
+        "title": "E-commerce with admin dashboard",
+        "category": "web",
+        "image": "web/josam-ecommerce-with-admin-dashboard.jpg",
+        "link": "https://josam-ecommerce.vercel.app"
+      },
+      {
+        "title": "Admin dashboard for ecommerce",
+        "category": "web",
+        "image": "web/josam-ecommerce-admin-dashboard.png",
+        "link": "https://josam-ecommerce-admin-dashboard.vercel.app/"
+      },
       {
         "title": "Product Management System",
         "category": "web",
