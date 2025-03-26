@@ -24,8 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function loadHeader(data) {
-  document.querySelector(".logo-text").textContent = data.header.logoText;
-
   const navigationLinks = document.querySelector(".links-container");
   data.header.navigation.forEach((link) => {
     navigationLinks.innerHTML += `
@@ -70,7 +68,18 @@ function loadAboutMe(data) {
     data.aboutMe.personalInfos.firstName;
   document.querySelector(".last-name").innerText =
     data.aboutMe.personalInfos.lastName;
-  document.querySelector(".age").innerText = data.aboutMe.personalInfos.age;
+  const birthDate = new Date("2006-12-30");
+  const today = new Date();
+  const age =
+    today.getFullYear() -
+    birthDate.getFullYear() -
+    (today <
+    new Date(today.getFullYear(), birthDate.getMonth(), birthDate.getDate())
+      ? 1
+      : 0);
+
+  document.querySelector(".age").innerText = age;
+
   document.querySelector(".nationality").innerText =
     data.aboutMe.personalInfos.nationality;
   document.querySelector(".freelance").innerText =
@@ -423,8 +432,8 @@ let alert = document.getElementById("alert");
 let header = document.getElementById("header");
 let heroSection = document.getElementById("hero-section");
 
-alertBtnBox.addEventListener("click", () => {
-  alert.style.display = "none";
-  header.style.top = "0";
-  heroSection.style.marginTop = "60px";
-});
+// alertBtnBox.addEventListener("click", () => {
+//   alert.style.display = "none";
+//   header.style.top = "0";
+//   heroSection.style.marginTop = "60px";
+// });
